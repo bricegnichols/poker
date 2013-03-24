@@ -1,0 +1,63 @@
+<html>
+<head>
+  <style>
+    #card-container {
+    	width: 75%;
+    	float: left;
+    }
+
+    #hands-ref {
+    	float: right;
+    	margin-top: 20px;
+    }
+
+    #hands-ref p {
+   	
+	}
+
+  	.card {
+  		margin: 10px 0;
+  		padding: 5px;
+  		width: 19%;
+  		height: 300px;
+  		-webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  	}
+
+  	.clearboth {
+  		clear: both;
+  	}
+  </style>
+</head>
+<body>
+  <div id="card-container">
+    <object class="card" data="/assets/cards/2_of_clubs.svg"></object>
+	<object class="card" data="/assets/cards/3_of_diamonds.svg"></object>
+    <object class="card" data="/assets/cards/jack_of_clubs.svg"></object>
+    <object class="card" data="/assets/cards/2_of_spades.svg"></object>
+    <object class="card" data="/assets/cards/king_of_hearts.svg"></object>
+  </div>
+  <div id="hands-ref">
+  	Which one is it?
+    <table border="1">
+      <tbody>
+        <tr><td>Royal Flush?</td></tr>
+        <tr><td>Straight Flush?</td></tr>
+        <tr><td>Four of a kind?</td></tr>
+        <tr><td>Full House?</td></tr>
+        <tr><td>Flush?</td></tr>
+        <tr><td>Straight?</td></tr>
+        <tr><td>Three of a Kind?</td></tr>
+        <tr><td>Two Pair?</td></tr>
+        <tr><td>One Pair?</td></tr>
+        <tr><td>High Card?</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="clearboth"></div>
+  <center>
+    Cards should resize themselves so there are always 5 per row.
+  </center>
+</body>
+</html>
