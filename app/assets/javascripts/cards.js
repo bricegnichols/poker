@@ -96,6 +96,7 @@ function readCards() {
 function respond(bCorrectAnswer) {
     if (bCorrectAnswer) {
         alert("That's right!");
+        window.location = '/';
     }
     else {
         alert('NO! NO!!! NO NO!! WRONG!!!');
