@@ -1,0 +1,25 @@
+#card-container {
+  width: 75%;
+  height: 700px;
+  float: left;
+}
+
+ #hands-ref {
+   padding-top: 40px;
+}
+
+#hands-ref div.btn {
+  display: table;
+  margin: 5px;
+  width: 200px;
+}
+
+.card {
+  margin: 10px 0;
+  padding: 5px;
+  width: 19%;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

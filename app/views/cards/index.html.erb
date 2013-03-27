@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+  <div id="card-container">
+    <% @cards.each do |card| %>
+      <%= content_tag :input, nil, type: 'hidden', name: "card", value: card[:number] %>
+      <%= content_tag :object, class: 'card', data: "assets/cards/#{card[:name]}.svg" do %>     
+        <p>Your browser doesn't seem to support SVG.  You may want to consider upgrading to a newer browser like Google Chrome or Mozilla Firefox.
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+  <div id="hands-ref">
+    <div id="royal-flush" class="btn">Royal Flush</div>
+    <div id="straight-flush" class="btn">Straight Flush</div>
+    <div id="four-of-a-kind" class="btn">Four of a Kind</div>
+    <div id="full-house" class="btn">Full House</div>
+    <div id="flush" class="btn">Flush</div>
+    <div id="straight" class="btn">Straight</div>
+    <div id="three-of-a-kind" class="btn">Three of a Kind</div>
+    <div id="two-pair" class="btn">Two Pair</div>
+    <div id="one-pair"class="btn">One Pair</div>
+    <div id="high-card" class="btn">High Card</div>
+  </div>
+</body>
+</html>
